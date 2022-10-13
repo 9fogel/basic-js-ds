@@ -1,6 +1,6 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
-// const { ListNode } = require('../extensions/list-node.js');
+const { ListNode } = require('../extensions/list-node.js');
 
 /**
  * Given a singly linked list of integers l and an integer k,
@@ -22,10 +22,23 @@ const { NotImplementedError } = require('../extensions/index.js');
  *   }
  * }
  */
-function removeKFromList(/* l, k */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+
+function indexOf(element) {
+  
 }
+
+function removeKFromList(l, k) {
+  let temp = l;
+
+  while (temp) {
+    if (temp.value === k) {
+      //удалить элемент
+    } else {
+      temp = temp.next;
+    }
+  }
+}
+
 
 module.exports = {
   removeKFromList
