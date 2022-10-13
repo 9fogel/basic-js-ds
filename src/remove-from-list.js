@@ -23,20 +23,20 @@ const { ListNode } = require('../extensions/list-node.js');
  * }
  */
 
-function indexOf(element) {
-  
-}
+// function indexOf(element) {
+
+// }
 
 function removeKFromList(l, k) {
-  let temp = l;
+  // let temp = l;
 
-  while (temp) {
-    if (temp.value === k) {
-      //удалить элемент
-    } else {
-      temp = temp.next;
-    }
-  }
+  // while (temp) {
+  //   if (temp.value === k) {
+  //     //удалить элемент
+  //   } else {
+  //     temp = temp.next;
+  //   }
+  // }
 }
 
 
