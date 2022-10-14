@@ -28,15 +28,30 @@ const { ListNode } = require('../extensions/list-node.js');
 // }
 
 function removeKFromList(l, k) {
-  // let temp = l;
 
-  // while (temp) {
-  //   if (temp.value === k) {
-  //     //удалить элемент
-  //   } else {
-  //     temp = temp.next;
-  //   }
-  // }
+  if (l.value === k) {
+    console.log('catched first!');
+    l = l.next;
+  }
+
+  let cur = l;
+  let prev = null;
+
+  while (cur) {
+    if (cur.value === k) {
+      if (prev) {
+        prev.next = cur.next;
+      } else {
+        prev = cur.next;
+      }
+      cur = prev;
+    } else {
+      prev = cur;
+      cur = cur.next;
+    }
+  }
+
+  return l;
 }
 
 
